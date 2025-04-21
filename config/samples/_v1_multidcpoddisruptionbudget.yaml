@@ -1,0 +1,11 @@
+apiVersion: k8s.tochka.com/v1
+kind: MultidcPodDisruptionBudget
+metadata:
+  name: simple-multidcpoddisruptionbudget-ds
+  namespace: simple
+  labels:
+    app: test-app-ds
+spec:
+  minAvailable: "3"
+  selector:
+    app: "test-app-ds"

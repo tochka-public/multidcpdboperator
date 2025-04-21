@@ -1,0 +1,15 @@
+domain: k8s.tochka.com
+layout:
+- go.kubebuilder.io/v3
+projectName: multidcpdboperator
+repo: k8s.tochka.com/multidc-pdb-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: k8s.tochka.com
+  kind: MultidcPodDisruptionBudget
+  path: k8s.tochka.com/multidc-pdb-operator/api/v1
+  version: v1
+version: "3"
